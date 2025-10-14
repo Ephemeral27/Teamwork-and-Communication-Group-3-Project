@@ -8,7 +8,6 @@ for day in week:
 
     time = input(f"How much time your task it take?(in minutes) on {day}: ")
     
-
     assignments.append([day, time])
 
 print(assignments)
