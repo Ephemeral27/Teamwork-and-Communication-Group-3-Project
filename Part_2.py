@@ -1,6 +1,6 @@
 weekly_tasks = []
 assignments = {}
-number_of_assignments = int(input("Please neter how many assignments you have due this week: "))
+number_of_assignments = int(input("Please enter how many assignments you have due this week: "))
 for i in range(number_of_assignments):
     assignment_name = input("Please enter the assignment name: ")
     #each assignments key is assigned to 0. You need to replace it with the subtasks
