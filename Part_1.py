@@ -5,7 +5,7 @@ week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 assignments_time = {}
 # An empty dictionary variable for assignment time
 for day in week:
-    time = input(f"How much time your task it take?(in minutes) on {day}: ")
+    time = input(f"How much time do you have to work(in hours) on {day}: ")
 # Loops through each value of the week and asks for user input for time
     assignments_time[f"{day}"] = time
 # appends the day as the key and the time as the value
