@@ -50,3 +50,67 @@ for i in range(number_of_assignments):
         assignments[assignment_name] = task_name
 print(assignments) # this is just to show you the nesting of the assignmens and tasks
    
+# PART 3
+def distribute_tasks(assignments):
+    """
+    Divides tasks across days based on their start and due dates,
+    balancing the time and difficulty levels evenly.
+    """
+    distributed_plan = {day: [] for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]}
+    
+    for task_name, subtasks in assignments.items():
+        # Debugging add case for when assignment has subtasks (list of dict)
+        if isinstance(subtasks, list) and all(isinstance(s,dict) for s in subtasks):
+            for sub in subtasks:
+                for subtask_name, values in sub.items():
+                    total_time, start_day, end_day = values
+                    num_days = end_day - start_day + 1
+                    if num_days <= 0:
+                        num_days = 1  # prevent division error
+                    time_per_day = round(total_time / num_days, 2)
+
+                    # distribute evenly across the days
+                    for d in range(start_day, end_day + 1):
+                        day_name = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][d - 1]
+                        distributed_plan[day_name].append({
+                            "task": f"{task_name} - {subtask_name}",
+                            "time": time_per_day,
+                            #"difficulty": "medium"
+                        })
+        
+        elif isinstance(subtasks, list) and len(subtasks) == 3:
+            #for sub in subtasks:
+                    total_time, start_day, end_day = subtasks
+                    num_days = end_day - start_day + 1
+                    if num_days <= 0:
+                        num_days = 1  # prevent division error
+                    time_per_day = round(total_time / num_days, 2)
+
+                    # distribute evenly across the days
+                    for d in range(start_day, end_day + 1):
+                        day_name = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][d - 1]
+                        distributed_plan[day_name].append({
+                            "task": task_name,
+                            "time": time_per_day,
+                            #"difficulty": "medium"
+                        })
+    
+    return distributed_plan
+
+#PART 4:
+def display_schedule(distributed_plan):
+    """
+    Prints out tasks in a clear, day-by-day format.
+    """
+    print("\n===== WEEKLY STUDY PLAN =====")
+    for day, tasks in distributed_plan.items():
+        print(f"\n{day}:")
+        if not tasks:
+            print("  (No tasks)")
+        else:
+            for t in tasks:
+                print (f"  - {t['task']} → {t['time']} hours")
+                #print(f"  - {t['task']} → {t['time']} hours (difficulty: {t['difficulty']})")
+
+final_plan = distribute_tasks(assignments)
+display_schedule(final_plan)
