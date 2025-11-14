@@ -1,0 +1,67 @@
+ Project Update Template — CSSD1161
+Instructions: Fill and complete one copy of this document (in GitHub /docs/updates and publish to wiki) each week or maintain a running copy and update the Week sections below. Keep links accessible to the TA (public or add as collaborator).
+Cover Info
+• Team name: Group 3 
+• Project title: Study Planner 
+• Members (names & emails): 
+Salma Abdi (salma05@my.yorku.ca), Saronica Routh(saronica@my.yorku.ca) , 
+Sophia Pimenovsky(sophip@my.yorku.ca), Olivia Su (olivia5u@my.yorku.ca)
+• Update #:3    |   Date: 2025-11-14 (YYYY-MM-DD)
+Topic: Group 3 Project 
+At‑a‑glance:
+Overall status
+% complete (this week)
+Top risk (one line)
+Ask for TA/instructor
+On track
+85%
+Not finishing our presentation 
+…
+
+What we shipped/completed this week:
+• Finished coding part 3 (Splits up tasks evenly across days based on start date, due date and subtasks)
+• Finish coding part 4 (Prints out task to do each day in clear and easy to read format)
+• Finished debugging part 3 and 4, so it runs with parts 1 and 2
+
+Evidence & Links (paste URLs):
+• https://github.com/Ephemeral27/Teamwork-and-Communication-Group-3-Project/blob/main/Part_3%20%26%204.py
+• https://github.com/Ephemeral27/Teamwork-and-Communication-Group-3-Project/blob/main/combined_project.py
+
+Decisions made (owner, date):
+• Work on presentation (Everyone, Week 10)
+• Practise presentation (Everyone, Week 10)
+
+Challenges & risks (severity, mitigation):
+• Time management: Managing this project along with other classes as finals are nearing 
+• Miscommunication: as multiple people will be making a presentation together and practising together
+
+Plan for next week (task → owner → due date):
+• Review final code to ensure everything is correct (debugging if necessary) → Everyone → Week 10
+• Create slideshow for presentation → Everyone → Week 10 
+• Rehearsing scripts for presentation  → Everyone → Week 10 
+Optional Self‑Evaluation (per week)
+Week
+What went well
+What was hard
+One concrete improvement
+7
+Completed part 1 and 2 debugging.
+Debugging the code.
+Code is debugged.
+8
+Part 3 and 4 is started
+Subtasks were difficult to make
+The 2nd part of our program has started.
+9
+Finished debugging 3 and 4
+Debugging.
+Part 3 and 4 works well with part 1 and 2.
+
+
+Submission Block to LMS  (paste into LMS)
+• Repo (main): https://github.com/Ephemeral27/Teamwork-and-Communication-Group-3-Project.git
+• Wiki Home: https://github.com/Ephemeral27/Teamwork-and-Communication-Group-3-Project/wiki
+
+• This document (uploaded) ✅
+• Any notes for TA: N/A
+
