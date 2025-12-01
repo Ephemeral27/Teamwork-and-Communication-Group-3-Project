@@ -1,3 +1,11 @@
+# USER GUIDE: Welcome to our study planner! While it is very easy to use, user's should make sure to read the prompts carefully to avoid 
+#getting an inaccurate study plan. The information you will be asked to input are:
+#the number of assignments you have, whether it has subtasks. For example, if your task is to write a five 
+#page essay, you can divide it up into 5 subtasks, each paragraph being 1 subtask}.  
+#you will then be asked to provide the name of each subtask, its time duration, and its start and end dates. 
+#If the assignment has no subtasks, then you will be asked for the name, time duration, and start and end dates for the assignment or task.
+
+
 print("Welcome to the work planner! Please log your work down below.")
 # Welcomes user to the planner
 week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
